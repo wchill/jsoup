@@ -1,5 +1,5 @@
-package org.jsoup.helper;
-import org.jsoup.internal.SharedConstants;
+package org.wchill.jsoup.helper;
+import org.wchill.jsoup.internal.SharedConstants;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,7 +11,7 @@ public class HttpClientExecutorTest {
             enableHttpClient();
             RequestExecutor executor = RequestDispatch.get(null, null);
             //assertInstanceOf(HttpClientExecutor.class, executor);
-            assertEquals("org.jsoup.helper.HttpClientExecutor", executor.getClass().getName());
+            assertEquals("org.wchill.jsoup.helper.HttpClientExecutor", executor.getClass().getName());
             // Haven't figured out how to get Maven to allow this mjar code to be on the classpath for the surefire tests, hence not instanceof
         } finally {
             disableHttpClient(); // reset to default off (currently)

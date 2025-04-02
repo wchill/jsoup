@@ -1,6 +1,6 @@
-package org.jsoup.integration;
+package org.wchill.jsoup.integration;
 
-import org.jsoup.helper.HttpClientExecutorTest;
+import org.wchill.jsoup.helper.HttpClientExecutorTest;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 

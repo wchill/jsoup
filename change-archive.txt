@@ -329,7 +329,7 @@ Release 1.15.3 [2022-Aug-24]
 
 *** Release 1.15.1 [2022-May-15]
   * Change: removed previously deprecated methods and classes (including org.jsoup.safety.Whitelist; use
-    org.jsoup.safety.Safelist instead).
+    safety.org.wchill.jsoup.Safelist instead).
 
   * Improvement: when converting jsoup Documents to W3C Documents in W3CDom, preserve HTML valid attribute names if the
     input document is using the HTML syntax. (Previously, would always coerce using the more restrictive XML syntax.)
@@ -560,7 +560,7 @@ Release 1.15.3 [2022-Aug-24]
     you may need to make a code update.
     <https://github.com/jhy/jsoup/issues/1431>
 
-  * Change: the org.jsoup.Connection interface has been modified to introduce new methods for sessions and the cookie
+  * Change: the org.wchill.jsoup.Connection interface has been modified to introduce new methods for sessions and the cookie
     store. If you have a custom implementation of this interface, you will need to add implementations of these methods.
 
   * Improvement: added HTTP request session management support with Jsoup.newSession(). This extends the Connection
